@@ -1,4 +1,4 @@
-# crud-basic
+# vue-crud-basic
 
 ## Project setup
 ```
