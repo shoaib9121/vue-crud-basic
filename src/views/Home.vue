@@ -1,5 +1,5 @@
 <template>
-  <Employees />
+  <Employees title="Employees" />
 </template>
 
 <script>

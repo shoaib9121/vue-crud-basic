@@ -1,6 +1,6 @@
 <template>
   <h2 class="d-flex justify-content-between mb-4">
-    All Employees
+    <span data-title-test="pageTitle">All {{ title }} </span>
     <router-link to="/add" class="btn btn-primary">Add new</router-link>
   </h2>
   <table v-if="employees.length" class="table table-bordered table-striped">
@@ -17,7 +17,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-for="emp in employees" :key="emp.id">
+      <tr v-for="emp in employees" :key="emp.id" data-test="employeesLength">
         <td class="text-left" scope="row">
           <b>{{ emp.id }}</b>
         </td>
@@ -76,6 +76,9 @@ export default {
         },
       ];
     },
+  },
+  props: {
+    title: String,
   },
   data() {
     return {
