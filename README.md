@@ -1,6 +1,8 @@
 # vue-crud-basic
 
-Unit testing with jest is implemented inside
+- A very basic Vue app demonstrating crud operations. 
+- A free Fake API(https://jsonplaceholder.typicode.com/) is being used for crud operations i.e. CREATE, UPDATE and DELETE.
+- Unit testing with Jest has been implemented just for basic purpose.
 
 ## Project setup
 
