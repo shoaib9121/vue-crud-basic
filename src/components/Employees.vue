@@ -1,6 +1,6 @@
 <template>
   <h2 class="d-flex justify-content-between mb-4">
-    <span data-title-test="pageTitle">All {{ title }} </span>
+    <span data-title-test="pageTitle">{{ title }} </span>
     <router-link to="/add" class="btn btn-primary">Add new</router-link>
   </h2>
   <table v-if="employees.length" class="table table-bordered table-striped">
@@ -45,7 +45,6 @@
     <span>No employees</span>
   </p>
 </template>
-
 <script>
 import EmployeeService from "../services/EmployeeService";
 
